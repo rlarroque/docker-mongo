@@ -17,4 +17,4 @@ done
 docker build -t $DOCKER_NAME:latest .
 
 # Run container from mongo image
-docker run --name $DOCKER_NAME $DOCKER_NAME
+docker run --name $DOCKER_NAME -p 27017:27017 $DOCKER_NAME
