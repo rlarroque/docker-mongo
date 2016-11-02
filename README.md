@@ -5,7 +5,17 @@ It follows the creation of a mongo db container from [mongo official image](http
 
 ### How to use
 
-To start a container simply execute the shell script _start-mongo_.
+#### Compose
+
+To start a database and feed it with some data:
+
+`docker-compose up`
+
+Data are stored in _init.json_.
+
+#### MongoDB standalone.
+
+To start a database container, simply execute the script _start-mongo_.
 
 The port exposed is `27017` (default mongo port).
 

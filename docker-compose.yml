@@ -1,0 +1,9 @@
+mongo:
+  image: rlarroque/mongo
+  ports:
+    - "27017:27017"
+
+seed:
+  build: ./seed
+  links:
+    - mongo
